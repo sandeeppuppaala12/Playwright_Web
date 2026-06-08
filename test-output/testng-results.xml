@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-08T23:43:41 IST" name="Default suite" finished-at="2026-06-08T23:44:08 IST" duration-ms="26896">
+  <suite started-at="2026-06-09T02:00:53 IST" name="Default suite" finished-at="2026-06-09T02:01:05 IST" duration-ms="11496">
     <groups>
     </groups>
-    <test started-at="2026-06-08T23:43:41 IST" name="Default test" finished-at="2026-06-08T23:44:08 IST" duration-ms="26896">
+    <test started-at="2026-06-09T02:00:53 IST" name="Default test" finished-at="2026-06-09T02:01:05 IST" duration-ms="11496">
       <class name="com.automation.web.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T23:43:41 IST" name="setUp" finished-at="2026-06-08T23:44:07 IST" duration-ms="25526" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-09T02:00:54 IST" name="setUp" finished-at="2026-06-09T02:01:04 IST" duration-ms="10137" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,7 +16,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateMenuLinks()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T23:44:07 IST" name="validateMenuLinks" finished-at="2026-06-08T23:44:07 IST" duration-ms="55" status="FAIL">
+        <test-method signature="validateMenuLinks()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-09T02:01:04 IST" name="validateMenuLinks" finished-at="2026-06-09T02:01:04 IST" duration-ms="70" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -30,7 +30,7 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1079)
 at org.testng.Assert.assertEquals(Assert.java:1043)
 at org.testng.Assert.assertEquals(Assert.java:1089)
-at com.automation.web.tests.HomePageTest.validateMenuLinks(HomePageTest.java:20)
+at com.automation.web.tests.HomePageTest.validateMenuLinks(HomePageTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,11 +65,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateMenuLinks -->
-        <test-method signature="validateMenuLinks_2()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T23:44:07 IST" name="validateMenuLinks_2" finished-at="2026-06-08T23:44:07 IST" duration-ms="3" status="PASS">
+        <test-method signature="validateMenuLinks_2()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-09T02:01:05 IST" name="validateMenuLinks_2" finished-at="2026-06-09T02:01:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateMenuLinks_2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T23:44:07 IST" name="tearDown" finished-at="2026-06-08T23:44:08 IST" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-09T02:01:05 IST" name="tearDown" finished-at="2026-06-09T02:01:05 IST" duration-ms="418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
