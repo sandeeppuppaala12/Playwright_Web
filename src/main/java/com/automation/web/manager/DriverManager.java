@@ -24,7 +24,7 @@ public class DriverManager {
 
 	public Page initDriver(String browserInstanceType) {
 		try {
-			ConfigParser config = new ConfigParser();
+			ConfigParser config = new ConfigParser(); 
 
 			String browserType = browserInstanceType;
 			if (browserType == null || browserType.trim().isEmpty()) {
