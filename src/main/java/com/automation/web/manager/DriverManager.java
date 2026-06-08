@@ -28,10 +28,10 @@ public class DriverManager {
 
 			String browserType = browserInstanceType;
 			if (browserType == null || browserType.trim().isEmpty()) {
-				browserType = config.getPropertyValue("DEFAULT_BROWSER", "chrome");
+				browserType = config.getPropertyValue("DEFAULT_BROWSER");
 			}
 
-			boolean headless = Boolean.parseBoolean(config.getPropertyValue("HEADLESS", "false"));
+			boolean headless = Boolean.parseBoolean(config.getPropertyValue("HEADLESS"));
 
 			play.set(Playwright.create());
 			log.info("Starting Playwright for browser: {} (headless={})", browserType, headless);
