@@ -24,10 +24,11 @@ public class DriverManager {
 
 	public Page initDriver(String browserInstanceType) {
 		try {
-			ConfigParser config = new ConfigParser(); 
+			ConfigParser config = new ConfigParser();
 
 			String browserType = browserInstanceType;
 			if (browserType == null || browserType.trim().isEmpty()) {
+				log.info("BrowserType is: " + browserType);
 				browserType = config.getPropertyValue("DEFAULT_BROWSER");
 			}
 
@@ -38,14 +39,14 @@ public class DriverManager {
 
 			BrowserType.LaunchOptions options = new BrowserType.LaunchOptions().setHeadless(headless);
 
-			if (browserType.toLowerCase().contains("chrome") || browserType.toLowerCase().contains("chromium")) {
-				browser.set(play.get().chromium().launch(options.setChannel("chrome")));
+			if (browserType.toLowerCase().contains("webkit")) {
+				browser.set(play.get().webkit().launch(options));
 			} else if (browserType.toLowerCase().contains("firefox")) {
 				browser.set(play.get().firefox().launch(options.setChannel("firefox")));
 			} else if (browserType.toLowerCase().contains("edge") || browserType.toLowerCase().contains("msedge")) {
 				browser.set(play.get().chromium().launch(options.setChannel("msedge")));
-			} else if (browserType.toLowerCase().contains("webkit")) {
-				browser.set(play.get().webkit().launch(options));
+			} else if (browserType.toLowerCase().contains("chrome") || browserType.toLowerCase().contains("chromium")) {
+				browser.set(play.get().chromium().launch(options.setChannel("chrome")));
 			} else {
 				throw new IllegalArgumentException("Invalid Browser: " + browserType);
 			}
@@ -98,7 +99,7 @@ public class DriverManager {
 			Path screenshotsDir = Paths.get(PathDirectory.SCREENSHOTS_PATH);
 			Files.createDirectories(screenshotsDir);
 			String path = PathDirectory.SCREENSHOTS_PATH + System.currentTimeMillis() + ".png";
-			
+
 			if (page.get() != null) {
 				page.get().screenshot(new Page.ScreenshotOptions().setPath(Paths.get(path)).setFullPage(true));
 				log.info("Taking screenshot and saving to: {}", path);
@@ -107,7 +108,7 @@ public class DriverManager {
 				LoggerFactory.getLogger(DriverManager.class).warn("No page available for screenshot");
 				return null;
 			}
-			
+
 		} catch (Exception e) {
 			LoggerFactory.getLogger(DriverManager.class).error("Error taking screenshot", e);
 			return null;
