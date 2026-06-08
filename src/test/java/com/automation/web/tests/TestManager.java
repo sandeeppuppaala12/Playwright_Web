@@ -1,8 +1,12 @@
 package com.automation.web.tests;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Optional;
 
 import com.automation.web.listeners.ExtentListener;
 import com.automation.web.manager.DriverManager;
@@ -12,15 +16,31 @@ import com.microsoft.playwright.Page;
 
 @Listeners(ExtentListener.class)
 public class TestManager {
+	
+	private static final Logger log = LoggerFactory.getLogger(TestManager.class);
 
 	DriverManager manager;
 	Page page;
 	HomePage homePage;
 
 	@BeforeTest
-	public void setUp() throws Exception {
+	@Parameters({"browser"})
+	public void setUp(@Optional String browser) throws Exception {
+		log.info("Browser parameter received: " + browser+". Starting setup...");
 		manager = new DriverManager();
-		page = manager.initDriver("Chrome");
+		// Priority: TestNG parameter -> system property -> config
+		com.automation.web.utils.ConfigParser config = new com.automation.web.utils.ConfigParser();
+
+		if (browser == null || browser.trim().isEmpty()) {
+			browser = System.getProperty("DEFAULT_BROWSER");
+		}
+
+		if (browser == null || browser.trim().isEmpty()) {
+			browser = config.getPropertyValue("DEFAULT_BROWSER", "Chrome");
+		}
+		page = manager.initDriver(browser);
+		log.info("Selected browser: " + browser);
+		log.info("Initialized Playwright driver and opened the page");
 		homePage = new HomePage(page);
 		CommonUtils.directorySetup();
 	}
@@ -28,6 +48,7 @@ public class TestManager {
 	@AfterTest
 	public void tearDown() {
 		manager.terminateThread();
+		log.info("Browser closed and Playwright driver terminated");
 	}
 
 }

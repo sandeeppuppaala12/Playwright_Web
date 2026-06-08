@@ -5,6 +5,8 @@ import java.util.Arrays;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -17,9 +19,11 @@ public class ExtentReportListener_Backup implements ITestListener {
 	private static ExtentReports reports;
 
 	private static ThreadLocal<ExtentTest> tests = new ThreadLocal<ExtentTest>();
+	private static final Logger log = LoggerFactory.getLogger(ExtentReportListener_Backup.class);
 
 	private static void init() {
 		ExtentSparkReporter report = new ExtentSparkReporter(reportName);
+		reports = new ExtentReports();
 		report.config().setReportName("Playwright Automation");
 		report.config().setDocumentTitle("Playwright Web Automation Testing");
 		reports.attachReporter(report);
@@ -36,7 +40,7 @@ public class ExtentReportListener_Backup implements ITestListener {
 			 */
 			Object[] data = result.getParameters();
 
-			System.out.println("Received Parameters : " + Arrays.toString(data));
+			log.debug("Received Parameters : {}", Arrays.toString(data));
 
 			/*
 			 * Validate parameter count
@@ -69,13 +73,10 @@ public class ExtentReportListener_Backup implements ITestListener {
 			 */
 			tests.set(test);
 
-			System.out.println("Started Test : " + dynamicTestName);
+			log.info("Started Test : {}", dynamicTestName);
 
 		} catch (Exception e) {
-
-			System.out.println("Error in onTestStart() : " + e.getMessage());
-
-			e.printStackTrace();
+			log.error("Error in onTestStart(): {}", e.getMessage(), e);
 		}
 	}
 
@@ -87,8 +88,7 @@ public class ExtentReportListener_Backup implements ITestListener {
 			tests.get().pass("Test Passed");
 
 		} else {
-
-			System.out.println("ExtentTest is NULL in onTestSuccess()");
+			log.warn("ExtentTest is NULL in onTestSuccess()");
 		}
 	}
 
@@ -100,8 +100,7 @@ public class ExtentReportListener_Backup implements ITestListener {
 			tests.get().fail(result.getThrowable());
 
 		} else {
-
-			System.out.println("ExtentTest is NULL in onTestFailure()");
+			log.warn("ExtentTest is NULL in onTestFailure()");
 		}
 	}
 
@@ -113,8 +112,7 @@ public class ExtentReportListener_Backup implements ITestListener {
 			tests.get().skip("Test Skipped");
 
 		} else {
-
-			System.out.println("ExtentTest is NULL in onTestSkipped()");
+			log.warn("ExtentTest is NULL in onTestSkipped()");
 		}
 	}
 

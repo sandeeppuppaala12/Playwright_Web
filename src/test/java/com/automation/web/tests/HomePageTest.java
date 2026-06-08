@@ -19,5 +19,10 @@ public class HomePageTest extends TestManager {
 	public void validateMenuLinks() {
 		Assert.assertEquals(false, true);
 	}
+	
+	@Test
+	public void validateMenuLinks_2() {
+		Assert.assertEquals(false, false);
+	}
 
 }

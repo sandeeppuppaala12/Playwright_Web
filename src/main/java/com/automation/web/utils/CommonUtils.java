@@ -1,31 +1,28 @@
 package com.automation.web.utils;
 
-import java.io.File;
-import java.time.LocalDate;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.chrono.ChronoLocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Formatter;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class CommonUtils {
 
+	private static final Logger log = LoggerFactory.getLogger(CommonUtils.class);
+
 	public static void directorySetup() {
 		try {
-			File reportsPath = new File(PathDirectory.REPORTS_PATH);
-			File screenshotsPath = new File(PathDirectory.SCREENSHOTS_PATH);
-			File samplesPath = new File(PathDirectory.SAMPLES_PATH);
-			if (!reportsPath.mkdir()) {
-				System.out.println("Reports directory exists!!!");
-			}
-			if (!samplesPath.mkdir()) {
-				System.out.println("Samples directory exists!!!");
-			}
-			if (!screenshotsPath.mkdir()) {
-				System.out.println("Screenshots directory exists!!!");
-			}
+			Path reportsPath = Paths.get(PathDirectory.REPORTS_PATH);
+			Path screenshotsPath = Paths.get(PathDirectory.SCREENSHOTS_PATH);
+			Path samplesPath = Paths.get(PathDirectory.SAMPLES_PATH);
+			Files.createDirectories(reportsPath);
+			Files.createDirectories(samplesPath);
+			Files.createDirectories(screenshotsPath);
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error("Error creating required directories", e);
 		}
 	}
 

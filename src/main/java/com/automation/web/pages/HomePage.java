@@ -2,9 +2,14 @@ package com.automation.web.pages;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.microsoft.playwright.Page;
 
 public class HomePage {
+	
+	private static final Logger log = LoggerFactory.getLogger(HomePage.class);
 
 	private Page page;
 
