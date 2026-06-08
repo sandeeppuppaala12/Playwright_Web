@@ -21,14 +21,16 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
 
-		<!-- Source: https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<!-- Source:
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
@@ -36,7 +38,8 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<!-- Source: https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<!-- Source:
+		https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -60,15 +63,8 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<!-- Source: https://mvnrepository.com/artifact/org.apache.poi/poi -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>5.4.1</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<!-- Source: https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
+		<!-- Source:
+		https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
 		<dependency>
 			<groupId>com.microsoft.playwright</groupId>
 			<artifactId>playwright</artifactId>
@@ -84,22 +80,19 @@
 			<scope>compile</scope>
 		</dependency>
 
-			<!-- SLF4J logging facade -->
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>2.0.9</version>
-			</dependency>
-
-			<!-- Logback classic implementation -->
-			<dependency>
-				<groupId>ch.qos.logback</groupId>
-				<artifactId>logback-classic</artifactId>
-				<version>1.4.9</version>
-			</dependency>
-
+		<!-- SLF4J logging facade -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.9</version>
+		</dependency>
+		<!-- Logback classic implementation -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.4.9</version>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<!-- Ensure Java 11+ for Playwright -->
@@ -114,5 +107,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
