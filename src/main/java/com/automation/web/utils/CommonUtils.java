@@ -15,6 +15,7 @@ public class CommonUtils {
 
 	public static void directorySetup() {
 		try {
+			log.info("Setting up directories for reports, screenshots, and samples");
 			Path reportsPath = Paths.get(PathDirectory.REPORTS_PATH);
 			Path screenshotsPath = Paths.get(PathDirectory.SCREENSHOTS_PATH);
 			Path samplesPath = Paths.get(PathDirectory.SAMPLES_PATH);

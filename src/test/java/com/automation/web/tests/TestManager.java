@@ -30,7 +30,7 @@ public class TestManager {
 		CommonUtils.directorySetup();
 		log.info("Browser parameter received: " + browser+". Starting setup...");
 		// Priority: TestNG parameter -> system property -> config
-		page = manager.initDriver(browser);
+		page = manager.initDriver("chrome");
 		log.info("Initialized Playwright driver and opened the page");
 		homePage = new HomePage(page);
 		

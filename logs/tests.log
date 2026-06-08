@@ -1,48 +1,39 @@
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 29 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 8 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2026-06-08 23:43:41 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\91810\AppData\Local\Temp\testng-eclipse--1447154968\testng-customsuite.xml
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 16 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 9 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-06-09 01:00:19 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\91810\AppData\Local\Temp\testng-eclipse--837922913\testng-customsuite.xml
 
-2026-06-08 23:43:41 [main] INFO  c.a.web.listeners.ExtentListener - Extent report initialized at C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Report_08-06-26_234341.html
-2026-06-08 23:43:41 [main] INFO  c.automation.web.tests.TestManager - Browser parameter received: null. Starting setup...
-2026-06-08 23:43:50 [main] INFO  c.a.web.manager.DriverManager - Starting Playwright for browser: Webkit (headless=false)
-2026-06-08 23:44:01 [main] INFO  c.a.web.manager.DriverManager - Navigating to URL: https://www.globalsqa.com/demo-site/
-2026-06-08 23:44:07 [main] INFO  c.automation.web.tests.TestManager - Selected browser: Webkit
-2026-06-08 23:44:07 [main] INFO  c.automation.web.tests.TestManager - Initialized Playwright driver and opened the page
-2026-06-08 23:44:07 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 43 ms.
-2026-06-08 23:44:07 [main] INFO  c.a.web.manager.DriverManager - Taking screenshot and saving to: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780942447412.png
-2026-06-08 23:44:08 [main] INFO  c.automation.web.tests.TestManager - Browser closed and Playwright driver terminated
-2026-06-08 23:44:08 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@6d4c273c: 98 ms
-2026-06-08 23:44:08 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@6293e39e: 40 ms
-2026-06-08 23:44:08 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@9d1a267: 23 ms
-2026-06-08 23:44:08 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@1d96d872: 12 ms
-2026-06-08 23:44:08 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1dc2de84: 13 ms
-2026-06-08 23:44:08 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@6a0659ac: 1 ms
+2026-06-09 01:00:19 [main] INFO  c.a.web.listeners.ExtentListener - Extent report initialized at C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Report_09-06-26_010019.html
+2026-06-09 01:00:19 [main] INFO  c.automation.web.utils.CommonUtils - Setting up directories for reports, screenshots, and samples
+2026-06-09 01:00:19 [main] INFO  c.automation.web.tests.TestManager - Browser parameter received: null. Starting setup...
+2026-06-09 01:00:33 [main] INFO  c.a.web.manager.DriverManager - BrowserType is: null
+2026-06-09 01:00:43 [main] INFO  c.a.web.manager.DriverManager - Starting Playwright for browser: Webkit (headless=false)
+2026-06-09 01:01:30 [main] INFO  c.a.web.manager.DriverManager - Navigating to URL: https://www.globalsqa.com/demo-site/

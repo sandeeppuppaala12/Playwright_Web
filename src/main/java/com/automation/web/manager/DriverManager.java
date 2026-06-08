@@ -32,6 +32,8 @@ public class DriverManager {
 			}
 
 			boolean headless = Boolean.parseBoolean(config.getPropertyValue("HEADLESS"));
+			
+//			Playwright.create().webkit().launch(new BrowserType.LaunchOptions().setHeadless(headless));
 
 			play.set(Playwright.create());
 			log.info("Starting Playwright for browser: {} (headless={})", browserInstanceType, headless);
