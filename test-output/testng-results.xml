@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-08T13:38:33 IST" name="Default suite" finished-at="2026-06-08T13:39:33 IST" duration-ms="59876">
+  <suite started-at="2026-06-08T23:43:41 IST" name="Default suite" finished-at="2026-06-08T23:44:08 IST" duration-ms="26896">
     <groups>
     </groups>
-    <test started-at="2026-06-08T13:38:33 IST" name="Default test" finished-at="2026-06-08T13:39:33 IST" duration-ms="59876">
+    <test started-at="2026-06-08T23:43:41 IST" name="Default test" finished-at="2026-06-08T23:44:08 IST" duration-ms="26896">
       <class name="com.automation.web.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T13:38:35 IST" name="setUp" finished-at="2026-06-08T13:39:14 IST" duration-ms="39252" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T23:43:41 IST" name="setUp" finished-at="2026-06-08T23:44:07 IST" duration-ms="25526" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,7 +16,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateMenuLinks()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T13:39:14 IST" name="validateMenuLinks" finished-at="2026-06-08T13:39:14 IST" duration-ms="91" status="FAIL">
+        <test-method signature="validateMenuLinks()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T23:44:07 IST" name="validateMenuLinks" finished-at="2026-06-08T23:44:07 IST" duration-ms="55" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -65,11 +65,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateMenuLinks -->
-        <test-method signature="validateMenuLinks_2()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T13:39:20 IST" name="validateMenuLinks_2" finished-at="2026-06-08T13:39:20 IST" duration-ms="4" status="PASS">
+        <test-method signature="validateMenuLinks_2()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T23:44:07 IST" name="validateMenuLinks_2" finished-at="2026-06-08T23:44:07 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateMenuLinks_2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T13:39:20 IST" name="tearDown" finished-at="2026-06-08T13:39:33 IST" duration-ms="13160" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.web.tests.HomePageTest@589da3f3]" started-at="2026-06-08T23:44:07 IST" name="tearDown" finished-at="2026-06-08T23:44:08 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

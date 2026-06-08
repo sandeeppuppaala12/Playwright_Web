@@ -26,8 +26,8 @@ public class TestManager {
 	@BeforeTest
 	@Parameters({"browser"})
 	public void setUp(@Optional String browser) throws Exception {
-		log.info("Browser parameter received: " + browser+". Starting setup...");
 		manager = new DriverManager();
+		log.info("Browser parameter received: " + browser+". Starting setup...");
 		// Priority: TestNG parameter -> system property -> config
 		com.automation.web.utils.ConfigParser config = new com.automation.web.utils.ConfigParser();
 
@@ -36,10 +36,11 @@ public class TestManager {
 		}
 
 		if (browser == null || browser.trim().isEmpty()) {
-			browser = config.getPropertyValue("DEFAULT_BROWSER", "Chrome");
+			browser = config.getPropertyValue("DEFAULT_BROWSER");
+			log.info("Browser parameter received: " + browser+". Setting up with Default browser...");
 		}
+		
 		page = manager.initDriver(browser);
-		log.info("Selected browser: " + browser);
 		log.info("Initialized Playwright driver and opened the page");
 		homePage = new HomePage(page);
 		CommonUtils.directorySetup();

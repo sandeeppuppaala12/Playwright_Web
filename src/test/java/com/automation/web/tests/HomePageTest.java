@@ -1,7 +1,5 @@
 package com.automation.web.tests;
 
-import java.util.List;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
