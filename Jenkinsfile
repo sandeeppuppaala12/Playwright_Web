@@ -12,7 +12,7 @@
 pipeline {
     agent any
     tools{
-		jdk 'JDK17'
+		jdk 'JDK_17'
         maven 'Playwright_Maven'
     }
     options {
@@ -45,6 +45,16 @@ pipeline {
                 }
             }
         }
+        
+        stage('Install Playwright Browsers and Linux Dependencies') {
+		    steps {
+		        // 1. Download the bundled versions of Chromium, Firefox, and WebKit
+		        sh 'mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install"'
+		        
+		        // 2. Install missing OS packages/libraries (libnss3, libgbm1, fonts, etc.)
+		        sh 'sudo mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps"'
+		    }
+		}
 
         stage('Build') {
             steps {
