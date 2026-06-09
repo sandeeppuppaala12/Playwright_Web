@@ -45,42 +45,6 @@ pipeline {
             }
         }
 
-        stage('Install Playwright Dependencies') {
-            steps {
-                script {
-                    echo "========== Installing Playwright Browser Dependencies =========="
-                    sh '''
-                        # Install system dependencies for Playwright browsers
-                        if ! command -v chromium-browser &> /dev/null; then
-                            echo "Installing Chromium and dependencies..."
-                            sudo apt-get update
-                            sudo apt-get install -y \
-                                libxss1 \
-                                libgconf-2-4 \
-                                libx11-6 \
-                                libx11-xcb1 \
-                                libxcb1 \
-                                libxext6 \
-                                libxrandr2 \
-                                libnss3 \
-                                libdrm2 \
-                                libgbm1 \
-                                libpango-1.0-0 \
-                                libpango-gobject-1.0-0 \
-                                fonts-liberation \
-                                xdg-utils \
-                                wget
-                        fi
-                        
-                        # Install Firefox if not present
-                        if ! command -v firefox &> /dev/null; then
-                            sudo apt-get install -y firefox-geckodriver
-                        fi
-                    '''
-                }
-            }
-        }
-
         stage('Build') {
             steps {
                 script {
