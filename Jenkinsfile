@@ -48,11 +48,14 @@ pipeline {
         
         stage('Install Playwright Browsers and Linux Dependencies') {
 		    steps {
-		        // 1. Download the bundled versions of Chromium, Firefox, and WebKit
-		        sh 'mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install"'
-		        
-		        // 2. Install missing OS packages/libraries (libnss3, libgbm1, fonts, etc.)
-		        sh 'sudo mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps"'
+		        // 1. Update system packages safely
+			        sh 'sudo apt-get update'
+			        
+			        // 2. Install the exact browser libraries required by Ubuntu 24
+			        sh 'sudo apt-get install -y libnss3 libatk-bridge2.0-0 libxss1 libasound2t64 libgbm1 libgtk-3-0t64 libxshmfence-dev libxrandr2 libxcomposite1 libxcursor1 libxdamage1 libxi6'
+			        
+			        // 3. Download the browser binaries via Maven (Does NOT need sudo)
+			        sh 'mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install"'
 		    }
 		}
 
