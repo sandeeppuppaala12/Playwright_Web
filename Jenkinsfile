@@ -12,7 +12,7 @@
 pipeline {
     agent any
     tools{
-		jdk 'JDK17'
+		jdk 'JDK_17'
         maven 'Playwright_Maven'
     }
     options {
