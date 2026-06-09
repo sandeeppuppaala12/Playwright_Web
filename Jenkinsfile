@@ -11,7 +11,9 @@
 
 pipeline {
     agent any
-
+    tools{
+        maven 'maven_playwright'
+    }
     options {
         timestamps()
         timeout(time: 30, unit: 'MINUTES')
