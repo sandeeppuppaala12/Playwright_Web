@@ -12,7 +12,7 @@
 pipeline {
     agent any
     tools{
-        maven 'maven_playwright'
+        maven 'Playwright_Maven'
     }
     options {
         timestamps()
