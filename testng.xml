@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Playwright_Web_Suite" parallel="tests" thread-count="3">
+  
+  <test name="Playwright_Web_Test_Chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.automation.web.tests.HomePageTest"/>
+      <class name="com.automation.web.tests.TestManager"/>
+    </classes>
+  </test> <!-- Playwright_Web_Test_Chrome -->
+  
+  <test name="Playwright_Web_Test_Firefox">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.automation.web.tests.HomePageTest"/>
+      <class name="com.automation.web.tests.TestManager"/>
+    </classes>
+  </test> <!-- Playwright_Web_Test_Firefox -->
+  
+  <test name="Playwright_Web_Test_Edge">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.automation.web.tests.HomePageTest"/>
+      <class name="com.automation.web.tests.TestManager"/>
+    </classes>
+  </test> <!-- Playwright_Web_Test_Edge -->
+  
+</suite> <!-- Playwright_Web_Suite -->

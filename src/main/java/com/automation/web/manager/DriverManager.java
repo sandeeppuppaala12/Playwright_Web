@@ -24,7 +24,7 @@ public class DriverManager {
 
 	public Page initDriver(String browserInstanceType) {
 		try {
-			ConfigParser config = new ConfigParser();
+			ConfigParser config = ConfigParser.getInstance();
 
 			if (browserInstanceType == null || browserInstanceType.trim().isEmpty()) {
 				log.info("BrowserType is: " + browserInstanceType);
@@ -106,12 +106,12 @@ public class DriverManager {
 				log.info("Taking screenshot and saving to: {}", path);
 				return path;
 			} else {
-				LoggerFactory.getLogger(DriverManager.class).warn("No page available for screenshot");
+				log.warn("No page available for screenshot");
 				return null;
 			}
 
 		} catch (Exception e) {
-			LoggerFactory.getLogger(DriverManager.class).error("Error taking screenshot", e);
+			log.error("Error taking screenshot", e);
 			return null;
 		}
 	}

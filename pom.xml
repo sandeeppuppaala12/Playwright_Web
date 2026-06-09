@@ -17,7 +17,7 @@
 
 	<dependencies>
 
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<!-- TestNG Framework for Test Execution -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -25,6 +25,7 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Lombok for Code Generation (Optional) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -32,50 +33,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
-		</dependency>
-
-		<!-- Source:
-		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>6.3.3</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<!-- Source:
-		https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>5.0.9</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<!-- Source: https://mvnrepository.com/artifact/org.apache.poi/poi -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>5.4.1</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<!-- Source: https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>5.4.1</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<!-- Source:
-		https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
+		<!-- Playwright for Browser Automation -->
 		<dependency>
 			<groupId>com.microsoft.playwright</groupId>
 			<artifactId>playwright</artifactId>
@@ -83,7 +41,30 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<!-- Source: https://mvnrepository.com/artifact/org.json/json -->
+		<!-- Extent Reports for Test Reporting -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.9</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Apache POI for Excel Data Handling -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.4.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.4.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- JSON Library for JSON Processing -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
@@ -91,13 +72,14 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<!-- SLF4J logging facade -->
+		<!-- SLF4J API for Logging Abstraction -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>2.0.9</version>
 		</dependency>
-		<!-- Logback classic implementation -->
+
+		<!-- Logback for Logging Implementation -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>

@@ -85,3 +85,71 @@
 2026-06-09 02:01:06 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@6f0cb5a1: 11 ms
 2026-06-09 02:01:06 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@12958360: 10 ms
 2026-06-09 02:01:06 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@c6e0f32: 0 ms
+2026-06-09 13:38:18 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\91810\eclipse-workspace\Training1\playwright_web\testng.xml
+
+2026-06-09 13:38:18 [TestNG-tests-3] INFO  c.a.web.listeners.ExtentListener - Extent report initialized at C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Report_09-06-26_133818.html
+2026-06-09 13:38:18 [TestNG-tests-1] INFO  c.a.web.listeners.ExtentListener - Extent report initialized at C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Report_09-06-26_133818.html
+2026-06-09 13:38:18 [TestNG-tests-2] INFO  c.a.web.listeners.ExtentListener - Extent report initialized at C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Report_09-06-26_133818.html
+2026-06-09 13:38:19 [TestNG-tests-3] INFO  c.automation.web.utils.CommonUtils - Setting up directories for reports, screenshots, and samples
+2026-06-09 13:38:19 [TestNG-tests-2] INFO  c.automation.web.utils.CommonUtils - Setting up directories for reports, screenshots, and samples
+2026-06-09 13:38:19 [TestNG-tests-1] INFO  c.automation.web.utils.CommonUtils - Setting up directories for reports, screenshots, and samples
+2026-06-09 13:38:19 [TestNG-tests-1] INFO  c.automation.web.tests.TestManager - Browser parameter received: chrome. Starting setup...
+2026-06-09 13:38:19 [TestNG-tests-2] INFO  c.automation.web.tests.TestManager - Browser parameter received: firefox. Starting setup...
+2026-06-09 13:38:19 [TestNG-tests-3] INFO  c.automation.web.tests.TestManager - Browser parameter received: edge. Starting setup...
+2026-06-09 13:38:23 [TestNG-tests-1] INFO  c.a.web.manager.DriverManager - Starting Playwright for browser: chrome (headless=true)
+2026-06-09 13:38:23 [TestNG-tests-2] INFO  c.a.web.manager.DriverManager - Starting Playwright for browser: firefox (headless=true)
+2026-06-09 13:38:23 [TestNG-tests-1] INFO  c.a.web.manager.DriverManager - Navigating to URL: https://www.globalsqa.com/demo-site/
+2026-06-09 13:38:24 [TestNG-tests-3] INFO  c.a.web.manager.DriverManager - Starting Playwright for browser: edge (headless=true)
+2026-06-09 13:38:25 [TestNG-tests-3] INFO  c.a.web.manager.DriverManager - Navigating to URL: https://www.globalsqa.com/demo-site/
+2026-06-09 13:38:27 [TestNG-tests-3] INFO  c.automation.web.tests.TestManager - Initialized Playwright driver and opened the page
+2026-06-09 13:38:28 [TestNG-tests-3] INFO  c.a.web.manager.DriverManager - Taking screenshot and saving to: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780992507834.png
+2026-06-09 13:38:28 [TestNG-tests-1] INFO  c.automation.web.tests.TestManager - Initialized Playwright driver and opened the page
+2026-06-09 13:38:29 [TestNG-tests-3] INFO  c.automation.web.tests.TestManager - Browser closed and Playwright driver terminated
+2026-06-09 13:38:29 [TestNG-tests-1] INFO  c.a.web.manager.DriverManager - Taking screenshot and saving to: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780992508866.png
+2026-06-09 13:38:29 [TestNG-tests-1] INFO  c.automation.web.tests.TestManager - Browser closed and Playwright driver terminated
+2026-06-09 13:38:35 [TestNG-tests-2] INFO  c.a.web.manager.DriverManager - Navigating to URL: https://www.globalsqa.com/demo-site/
+2026-06-09 13:38:39 [TestNG-tests-2] INFO  c.automation.web.tests.TestManager - Initialized Playwright driver and opened the page
+2026-06-09 13:38:39 [TestNG-tests-2] INFO  c.a.web.manager.DriverManager - Taking screenshot and saving to: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780992519312.png
+2026-06-09 13:38:40 [TestNG-tests-2] INFO  c.automation.web.tests.TestManager - Browser closed and Playwright driver terminated
+2026-06-09 14:29:32 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\91810\eclipse-workspace\Training1\playwright_web\testng.xml
+
+2026-06-09 14:29:32 [TestNG-tests-1] INFO  c.automation.web.utils.ConfigParser - Configuration loaded successfully from: C:\Users\91810\eclipse-workspace\Training1\playwright_web\src\main\resources\\Config.properties
+2026-06-09 14:29:32 [TestNG-tests-1] INFO  c.a.web.listeners.ExtentListener - Extent report initialized successfully at C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Report_09-06-26_142932.html
+2026-06-09 14:29:32 [TestNG-tests-1] INFO  c.a.web.listeners.ExtentListener - Test execution started: Playwright_Web_Test_Chrome
+2026-06-09 14:29:32 [TestNG-tests-3] INFO  c.a.web.listeners.ExtentListener - Test execution started: Playwright_Web_Test_Edge
+2026-06-09 14:29:32 [TestNG-tests-2] INFO  c.a.web.listeners.ExtentListener - Test execution started: Playwright_Web_Test_Firefox
+2026-06-09 14:29:32 [TestNG-tests-3] INFO  c.automation.web.utils.CommonUtils - Setting up directories for reports, screenshots, and samples
+2026-06-09 14:29:32 [TestNG-tests-2] INFO  c.automation.web.utils.CommonUtils - Setting up directories for reports, screenshots, and samples
+2026-06-09 14:29:32 [TestNG-tests-1] INFO  c.automation.web.utils.CommonUtils - Setting up directories for reports, screenshots, and samples
+2026-06-09 14:29:32 [TestNG-tests-1] INFO  c.automation.web.tests.TestManager - Browser parameter received: chrome. Starting setup...
+2026-06-09 14:29:32 [TestNG-tests-2] INFO  c.automation.web.tests.TestManager - Browser parameter received: firefox. Starting setup...
+2026-06-09 14:29:32 [TestNG-tests-3] INFO  c.automation.web.tests.TestManager - Browser parameter received: edge. Starting setup...
+2026-06-09 14:29:37 [TestNG-tests-2] INFO  c.a.web.manager.DriverManager - Starting Playwright for browser: firefox (headless=true)
+2026-06-09 14:29:37 [TestNG-tests-3] INFO  c.a.web.manager.DriverManager - Starting Playwright for browser: edge (headless=true)
+2026-06-09 14:29:38 [TestNG-tests-1] INFO  c.a.web.manager.DriverManager - Starting Playwright for browser: chrome (headless=true)
+2026-06-09 14:29:40 [TestNG-tests-3] INFO  c.a.web.manager.DriverManager - Navigating to URL: https://www.globalsqa.com/demo-site/
+2026-06-09 14:29:41 [TestNG-tests-1] INFO  c.a.web.manager.DriverManager - Navigating to URL: https://www.globalsqa.com/demo-site/
+2026-06-09 14:29:43 [TestNG-tests-2] INFO  c.a.web.manager.DriverManager - Navigating to URL: https://www.globalsqa.com/demo-site/
+2026-06-09 14:29:46 [TestNG-tests-1] INFO  c.automation.web.tests.TestManager - Initialized Playwright driver and opened the page
+2026-06-09 14:29:46 [TestNG-tests-3] INFO  c.automation.web.tests.TestManager - Initialized Playwright driver and opened the page
+2026-06-09 14:29:47 [TestNG-tests-1] INFO  c.a.web.manager.DriverManager - Taking screenshot and saving to: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780995586624.png
+2026-06-09 14:29:47 [TestNG-tests-1] INFO  c.a.web.listeners.ExtentListener - Screenshot attached for failed test: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780995586624.png
+2026-06-09 14:29:47 [TestNG-tests-1] ERROR c.a.web.listeners.ExtentListener - Test FAILED: validateMenuLinks on browser: Chrome
+2026-06-09 14:29:48 [TestNG-tests-3] INFO  c.a.web.manager.DriverManager - Taking screenshot and saving to: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780995587495.png
+2026-06-09 14:29:48 [TestNG-tests-3] INFO  c.a.web.listeners.ExtentListener - Screenshot attached for failed test: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780995587495.png
+2026-06-09 14:29:48 [TestNG-tests-3] ERROR c.a.web.listeners.ExtentListener - Test FAILED: validateMenuLinks on browser: Edge
+2026-06-09 14:29:48 [TestNG-tests-1] INFO  c.a.web.listeners.ExtentListener - Test PASSED: validateMenuLinks_2 on browser: Chrome
+2026-06-09 14:29:48 [TestNG-tests-3] INFO  c.a.web.listeners.ExtentListener - Test PASSED: validateMenuLinks_2 on browser: Edge
+2026-06-09 14:29:48 [TestNG-tests-2] INFO  c.automation.web.tests.TestManager - Initialized Playwright driver and opened the page
+2026-06-09 14:29:48 [TestNG-tests-2] INFO  c.a.web.manager.DriverManager - Taking screenshot and saving to: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780995588470.png
+2026-06-09 14:29:48 [TestNG-tests-2] INFO  c.a.web.listeners.ExtentListener - Screenshot attached for failed test: C:\Users\91810\eclipse-workspace\Training1\playwright_web\Reports\Screenshots\1780995588470.png
+2026-06-09 14:29:48 [TestNG-tests-2] ERROR c.a.web.listeners.ExtentListener - Test FAILED: validateMenuLinks on browser: Firefox
+2026-06-09 14:29:48 [TestNG-tests-2] INFO  c.a.web.listeners.ExtentListener - Test PASSED: validateMenuLinks_2 on browser: Firefox
+2026-06-09 14:29:50 [TestNG-tests-2] INFO  c.automation.web.tests.TestManager - Browser closed and Playwright driver terminated
+2026-06-09 14:29:51 [TestNG-tests-1] INFO  c.automation.web.tests.TestManager - Browser closed and Playwright driver terminated
+2026-06-09 14:29:51 [TestNG-tests-2] INFO  c.a.web.listeners.ExtentListener - Extent report flushed for test context: Playwright_Web_Test_Firefox
+2026-06-09 14:29:51 [TestNG-tests-1] INFO  c.a.web.listeners.ExtentListener - Extent report flushed for test context: Playwright_Web_Test_Chrome
+2026-06-09 14:29:53 [TestNG-tests-3] INFO  c.automation.web.tests.TestManager - Browser closed and Playwright driver terminated
+2026-06-09 14:29:53 [TestNG-tests-3] INFO  c.a.web.listeners.ExtentListener - Extent report flushed for test context: Playwright_Web_Test_Edge

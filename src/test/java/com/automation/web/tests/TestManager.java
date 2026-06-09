@@ -25,12 +25,12 @@ public class TestManager {
 
 	@BeforeTest
 	@Parameters({"browser"})
-	public void setUp(@Optional String browser) throws Exception {
+	public void setUp(@Optional("chrome") String browser) throws Exception {
 		manager = new DriverManager();
 		CommonUtils.directorySetup();
 		log.info("Browser parameter received: " + browser+". Starting setup...");
 		// Priority: TestNG parameter -> system property -> config
-		page = manager.initDriver("chrome");
+		page = manager.initDriver(browser);
 		log.info("Initialized Playwright driver and opened the page");
 		homePage = new HomePage(page);
 		
