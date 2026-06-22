@@ -12,7 +12,7 @@
 pipeline {
     agent any
     tools{
-		jdk 'JDK_21.0.11'
+		jdk 'JDK_17'
         maven 'Playwright_Maven'
     }
     options {
@@ -22,7 +22,7 @@ pipeline {
     }
 
     environment {
-        JAVA_HOME = '/usr/lib/jvm/java-21.0.11-openjdk-amd64'
+        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
         JAVA_TOOL_OPTIONS = '-XX:+UnlockExperimentalVMOptions -XX:+UseG1GC'
         PATH = "${JAVA_HOME}/bin:${PATH}"
     }
