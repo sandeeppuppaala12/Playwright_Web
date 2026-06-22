@@ -49,12 +49,32 @@ pipeline {
         stage('Install Playwright Browsers and Linux Dependencies') {
 		    steps {
 		        sh '''
-		            mvn dependency:resolve
-		
-		            mvn exec:java \
-		            -Dexec.mainClass=com.microsoft.playwright.CLI \
-		            -Dexec.args="install --with-deps"
-		        '''
+					sudo apt-get update
+					
+					sudo apt-get install -y \
+					libgtk-4-1 \
+					libgraphene-1.0-0 \
+					libatomic1 \
+					libevent-2.1-7t64 \
+					libopus0 \
+					gstreamer1.0-plugins-base \
+					gstreamer1.0-plugins-good \
+					gstreamer1.0-libav \
+					libsecret-1-0 \
+					libwoff1 \
+					libharfbuzz-icu0 \
+					libhyphen0 \
+					libmanette-0.2-0 \
+					libenchant-2-2 \
+					libavif16 \
+					libwebpdemux2 \
+					libwebpmux3 \
+					libx264-dev
+					
+					mvn exec:java \
+					-Dexec.mainClass=com.microsoft.playwright.CLI \
+					-Dexec.args="install chromium firefox webkit"
+					'''
 		    }
 		}
 
