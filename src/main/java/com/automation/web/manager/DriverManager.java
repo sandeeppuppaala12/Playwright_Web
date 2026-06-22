@@ -45,9 +45,9 @@ public class DriverManager {
 			} else if (browserInstanceType.toLowerCase().contains("firefox")) {
 				browser.set(play.get().firefox().launch(options.setChannel("firefox")));
 			} else if (browserInstanceType.toLowerCase().contains("edge") || browserInstanceType.toLowerCase().contains("msedge")) {
-				browser.set(play.get().chromium().launch(options.setChannel("msedge")));
+				browser.set(play.get().chromium().launch(options));
 			} else if (browserInstanceType.toLowerCase().contains("chrome") || browserInstanceType.toLowerCase().contains("chromium")) {
-				browser.set(play.get().chromium().launch(options.setChannel("chrome")));
+				browser.set(play.get().chromium().launch(options));
 			} else {
 				throw new IllegalArgumentException("Invalid Browser: " + browserInstanceType);
 			}

@@ -12,7 +12,7 @@
 pipeline {
     agent any
     tools{
-		jdk 'JDK_17'
+		jdk 'JDK_21.0.11'
         maven 'Playwright_Maven'
     }
     options {
@@ -22,7 +22,7 @@ pipeline {
     }
 
     environment {
-        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
+        JAVA_HOME = '/usr/lib/jvm/java-21.0.11-openjdk-amd64'
         JAVA_TOOL_OPTIONS = '-XX:+UnlockExperimentalVMOptions -XX:+UseG1GC'
         PATH = "${JAVA_HOME}/bin:${PATH}"
     }
@@ -48,25 +48,24 @@ pipeline {
         
         stage('Install Playwright Browsers and Linux Dependencies') {
 		    steps {
-		        // 1. Update system packages safely
-			        sh 'sudo apt-get update'
-			        
-			        // 2. Install the exact browser libraries required by Ubuntu 24
-			        sh 'sudo apt-get install -y libnss3 libatk-bridge2.0-0 libxss1 libasound2t64 libgbm1 libgtk-3-0t64 libxshmfence-dev libxrandr2 libxcomposite1 libxcursor1 libxdamage1 libxi6'
-			        
-			        // 3. Download the browser binaries via Maven (Does NOT need sudo)
-			        sh 'mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install"'
+		        sh '''
+		            mvn dependency:resolve
+		
+		            mvn exec:java \
+		            -Dexec.mainClass=com.microsoft.playwright.CLI \
+		            -Dexec.args="install --with-deps"
+		        '''
 		    }
 		}
 
-        stage('Build') {
+        /*stage('Build') {
             steps {
                 script {
                     echo "========== Building Maven Project =========="
                     sh 'mvn clean compile -DskipTests -q'
                 }
             }
-        }
+        }*/
 
         stage('Test - Parallel Execution') {
             steps {
